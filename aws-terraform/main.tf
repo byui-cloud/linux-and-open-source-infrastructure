@@ -297,5 +297,5 @@ resource "aws_network_interface" "internalnic" {
 resource "aws_route" "nat_route" {
   route_table_id         = aws_route_table.private_subnet_route_table.id
   destination_cidr_block = "0.0.0.0/0"
-  instance_id            = aws_instance.demo-nat.network_interface_id
+  instance_id            = aws_instance.demo-nat.id
 }
