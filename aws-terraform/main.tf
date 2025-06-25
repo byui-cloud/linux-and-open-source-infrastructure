@@ -272,7 +272,7 @@ EOF
 # Create an Demo VM for learning linux (Docker)
 # Available on http://10.13.37.201 from the bastion host
 resource "aws_instance" "demo" {
-  count = 2
+  #count = 2
   ami = "ami-0779caf41f9ba54f0"
   instance_type = "t2.micro"
   network_interface {
@@ -281,7 +281,8 @@ resource "aws_instance" "demo" {
   }
   key_name = aws_key_pair.server_key.key_name
   tags = {
-    Name = "demo-${count.index + 1}"
+    #Name = "demo-${count.index + 1}"
+    Name = "demo"
   }
   availability_zone = "us-east-1a"
 }
