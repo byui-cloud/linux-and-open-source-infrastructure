@@ -223,7 +223,7 @@ resource "aws_security_group" "nat_security_group" {
 # Create an EC2 instance running Debian 12 (20250316-2053) 
 # N. Virginia us-east-1
 resource "aws_instance" "bastion_host" {
-  ami = ""ami-0779caf41f9ba54f0
+  ami = "ami-0779caf41f9ba54f0"
   instance_type = "t3.small"
   subnet_id = "${aws_subnet.public_subnet.id}"
   key_name = aws_key_pair.server_key.key_name

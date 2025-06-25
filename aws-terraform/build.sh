@@ -1,7 +1,9 @@
 #!/bin/bash
 # Installs terraform, clones a repository with terraform configs, and builds the infrastructure
 # Give execute permissions to this file and run it:
-#  curl -O https://byui-cloud.github.io/linux-and-open-source-infrastructure/aws-terraform/build.sh && chmod a+x build.sh && ./build.sh
+#
+# Usage from AWS Cloudshell: 
+#   curl -O https://raw.githubusercontent.com/byui-cloud/linux-and-open-source-infrastructure/refs/heads/main/aws-terraform/build.sh && chmod a+x build.sh && ./build.sh
 
 sudo yum install -y yum-utils
 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
