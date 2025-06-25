@@ -103,14 +103,14 @@ resource "tls_private_key" "priv_key" {
 # Create a file for use with Windows users
 resource "local_file" "private_key_pem" {
   content = tls_private_key.priv_key.private_key_pem
-  filename = "../private_key.pem"
+  filename = "private_key.pem"
   file_permission = 0400
 }
 
 # Create a file for use with Linux/MacOS users
 resource "local_file" "private_key_openssh" {
   content = tls_private_key.priv_key.private_key_openssh
-  filename = "../private_key.key"
+  filename = "private_key.key"
   file_permission = 0400
 }
 
