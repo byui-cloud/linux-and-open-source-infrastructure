@@ -42,3 +42,5 @@ terraform.rc
 # Ignore keys
 *.key
 *.pem
+
+/sean
