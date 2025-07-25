@@ -31,7 +31,7 @@ The following credentials are used on the system:
 
 ## Template Details
 
-### Debian-12.11.0-Net2
+### Debian-12.11.0-Net3
 
 Based on the debian-12.11.0 netinstall ISO.  After installing the ISO, the following additions were made:
 1. Configure a static IP (the public IP) in `/etc/network/interfaces`.  Note that this IP address will have to be manually updated since we didn't get it working with terraform (due to a vmware tools limitation?)
